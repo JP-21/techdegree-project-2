@@ -1,0 +1,45 @@
+/* setting font for text  */
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+/* base styles */
+
+header {
+    background-color: ghostwhite;
+    padding: 10px;
+    margin: -1rem -1rem 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* images stlying */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* nav bar */
+
+
+
+a {
+    list-style: none;
+    text-align: center;
+    display: block;
+    margin-top: 2px;
+    padding: 16px 0;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
