@@ -1,4 +1,6 @@
-/* setting font for text  */
+/* ========================
+            Universal Styles
+========================= */
 
 * {
     font-family: 'Work Sans', sans-serif;
@@ -9,13 +11,16 @@ html {
 }
 
 
-/* base styles */
+/* ========================
+            Base Styles
+========================= */
 
 header {
     background-color: ghostwhite;
     padding: 10px;
     margin: -1rem -1rem 0;
 }
+
 body {
     overflow-x: hidden;
 }
@@ -42,10 +47,6 @@ footer {
     padding: 10px;
 }
 
-
-
-
-/* images stlying */
 
 img {
     max-width: 100%;
@@ -92,4 +93,42 @@ a { /* styles footer links */
     color: black;
     background-color: white;
     display: block;
+}
+
+/* ========================
+            Media Queries 
+========================= */
+
+@media screen and (min-width: 768px) {
+    h1 { /* nav bar and h1 element */
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    .main-nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        
+    }
+    .main-nav li a {
+        background-color: ghostwhite;
+        margin: 1rem;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .wrapper p {
+        order: -1;
+        text-align: left;
+        flex-grow: 2;
+    }
+    .wrapper img {
+        width: 38%;
+        margin-right: 20px;
+        margin-bottom: 2.5rem;
+    }
+
 }
