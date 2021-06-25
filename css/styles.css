@@ -47,6 +47,10 @@ footer {
     padding: 10px;
 }
 
+footer a {
+    color: rgb(112, 92, 92);
+}
+
 
 img {
     max-width: 100%;
@@ -95,29 +99,64 @@ a { /* styles footer links */
     display: block;
 }
 
+.wrapper2 {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid rgb(216, 216, 216);
+}
+
+.wrapper2 a {
+    color: black;
+}
+
+
+
+
+
+
 /* ========================
             Media Queries 
 ========================= */
+@media screen and (max-width: 767px) {
+    .footer-nav-container {
+        display: none;
+    }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /* styles for tablets */
+
+    header, .main-nav li a  {
+        background-color: white;
+    }
+
     h1 { /* nav bar and h1 element */
         margin-bottom: 0;
         margin-top: 2rem;
     }
+
+    p {
+        width: 75%;
+        margin: auto;
+    }
+
+    footer {
+        background-color: white; /* changes the background color of footer to white*/
+    }
     .main-nav {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 0;
         
     }
     .main-nav li a {
-        background-color: ghostwhite;
         margin: 1rem;
     }
 
     .wrapper {
         display: flex;
         justify-content: space-around;
+       
         
     }
     .wrapper p {
@@ -131,4 +170,78 @@ a { /* styles footer links */
         margin-bottom: 2.5rem;
     }
 
+    .wrapper2 p {
+        padding: 1rem 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .wrapper2 {
+        justify-content: space-between;
+        width: 97%;
+        margin: auto;
+    }
+
+    .wrapper3 { /* makes all sections into flex items */
+        display: flex; /* creates flexbox*/
+        flex-wrap: wrap; /* the items will wrap into a new line if the space is not enough*/
+        justify-content: space-around; /* uses available space  */
+        width: 95%; /* sets width 95% of available space */
+        margin: auto; /* centers element*/
+        
+        
+    }
+
+    .wrapper3 section {
+        max-width: 49%; 
+        margin-bottom: 4rem;
+    
+    }
+
+    .adding {
+        margin-top: 2rem; /* adding margin for p element in footer*/
+        margin-bottom: 1rem;
+    } 
+
+    .mobile {
+        display: none;
+    }
+    
+    .footer-nav-container {
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+
+    .nav1 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .extra {
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: flex; /* turns into flexbox*/
+        justify-content: space-between; /* adjusts available space*/
+        max-width: 97%; /* sets max width */
+        margin: auto; /*centers element */
+    }
+
+    .wrapper3 {
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    .wrapper3 section {
+        max-width: 32%;
+    }
+
+    .paragraph {
+        width: 50%;
+    }
 }

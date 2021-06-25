@@ -6,17 +6,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
     </head>
-    <body>
-        <header>
+    <body id="top">
+        <header >
+            <div class="desktop" >
             <h1>Student Name</h1>
             <ul class="main-nav">
-                <li><a href="#">HOME</a></li>
+                <li><a id="home" href="#">HOME</a></li>
                 <li><a href="index.html#portfolio">PORTFOLIO</a></li>
                 <li><a href="index.html#contact">CONTACT</a></li>
             </ul>
+            </div>
             <div class="wrapper">
                 <img src="images/responsive-layout-profile.png" alt="" class="profile-pic">
-                <p>
+                <p class="extra" style="margin-left: 1rem;">
                     Hi! I'm a front-end developer who loves
                     responsive design and css. I recently finished a 
                     degree in front-end web development at Treehouse and 
@@ -27,7 +29,7 @@
 
         <main>
             <h3 class="addingMargin" id="portfolio">PORTFOLIO</h3>
-            
+        <div class="wrapper3">
             <section>
                 <img src="images/portfolio-1.png" alt="">
                 <h2>Marketing Page</h2>
@@ -86,17 +88,27 @@
                     and press the big blue button and get the result.
                 </p>
             </section>
+        </div>
         </main>
 
         <footer>
             <h3 id="contact">CONTACT</h3>
-            <p>
+            <p class="paragraph">
                 If you're interested in chatting or want 
                 more information about what I've been working on, 
                 I'd love to hear from you!
             </p>
-            <p>Phone <a href="tel: +11115551234">+1(111) 555-1234</a></p>
-            <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+            <p class="adding">Phone <a href="tel: +11115551234"><strong>+1(111) 555-1234</strong></a></p>
+            <p style="padding-bottom: 3rem;">Email <a href="mailto:email@yoursite.com"><strong>email@yoursite.com</strong></a></p>
+            <div class="wrapper2"> <!-- This is the flex container--> 
+                <p><strong>Student name</strong></p> <!-- flex-item-->
+                <a class="mobile" href="index.html#top"><strong>BACK TO TOP</strong></a> <!-- flex-item-->
+                <div class="footer-nav-container"> <!--flex-item and container-->
+                    <a class="footer-nav" id="home" href="#"><strong>HOME</strong></a></li> <!--flex-item-->
+                    <a class="footer-nav nav1" href="index.html#portfolio"><strong>PORTFOLIO</strong></a> <!--flex-item-->
+                    <a class="footer-nav" href="index.html#contact"><strong>CONTACT</strong></a> <!-- flex-item-->
+                </div>
+            </div>
         </footer>
     </body>
 </html>
