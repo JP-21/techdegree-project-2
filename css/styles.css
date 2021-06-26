@@ -109,6 +109,9 @@ a { /* styles footer links */
     color: black;
 }
 
+.extra {
+    font-family: 'Work Sans', sans-serif;
+}
 
 
 
@@ -126,7 +129,7 @@ a { /* styles footer links */
 @media screen and (min-width: 768px) { /* styles for tablets */
 
     header, .main-nav li a  {
-        background-color: white;
+        background-color: ghostwhite;
     }
 
     h1 { /* nav bar and h1 element */
@@ -140,7 +143,7 @@ a { /* styles footer links */
     }
 
     footer {
-        background-color: white; /* changes the background color of footer to white*/
+        background-color: gray; /* changes the background color of footer to white*/
     }
     .main-nav {
         display: flex;
@@ -218,8 +221,12 @@ a { /* styles footer links */
     }
 
     .extra {
+        margin-right: 1rem;
         margin-left: 1rem;
         margin-top: 0;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: black;
     }
     
 }
@@ -244,4 +251,6 @@ a { /* styles footer links */
     .paragraph {
         width: 50%;
     }
+
+   
 }
